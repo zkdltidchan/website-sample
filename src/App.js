@@ -13,7 +13,7 @@ import About from './pages/About';
 
 function RouterContainer() {
   return (
-    <Router>
+    <Router basename="/website-sample">
       <Box display="flex" flexDirection="column" minHeight="100vh">
         <Header />
         <Box as="main" flex="1" py={8}>
