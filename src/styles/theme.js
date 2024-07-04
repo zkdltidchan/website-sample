@@ -23,26 +23,26 @@ const config = {
     useSystemColorMode: false,
 }
 
-const CustomButton = {
-    baseStyle: {
-        fontWeight: 'bold',
-    },
-    variants: {
-        solid: (props) => ({
-            bg: props.colorMode === 'dark' ? 'primary.300' : 'primary.500',
-            _hover: {
-                bg: props.colorMode === 'dark' ? 'primary.400' : 'primary.600',
-            },
-        }),
-        outline: (props) => ({
-            borderColor: props.colorMode === 'dark' ? 'primary.300' : 'primary.500',
-            color: props.colorMode === 'dark' ? 'primary.300' : 'primary.500',
-            _hover: {
-                bg: props.colorMode === 'dark' ? 'primary.400' : 'primary.600',
-            },
-        }),
-    },
-};
+// const CustomButton = {
+//     baseStyle: {
+//         fontWeight: 'bold',
+//     },
+//     variants: {
+//         solid: (props) => ({
+//             bg: props.colorMode === 'dark' ? 'primary.300' : 'primary.500',
+//             _hover: {
+//                 bg: props.colorMode === 'dark' ? 'primary.400' : 'primary.600',
+//             },
+//         }),
+//         outline: (props) => ({
+//             borderColor: props.colorMode === 'dark' ? 'primary.300' : 'primary.500',
+//             color: props.colorMode === 'dark' ? 'primary.300' : 'primary.500',
+//             _hover: {
+//                 bg: props.colorMode === 'dark' ? 'primary.400' : 'primary.600',
+//             },
+//         }),
+//     },
+// };
 
 const theme = extendTheme(
     {
@@ -50,10 +50,7 @@ const theme = extendTheme(
             ...extendColors,
             primary: extendColors.brand,
         },
-        config: {
-            initialColorMode: 'light',
-            useSystemColorMode: false,
-        },
+        config: config,
         components: {
             // Button: CustomButton,
         },
