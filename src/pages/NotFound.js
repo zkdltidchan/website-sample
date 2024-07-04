@@ -7,8 +7,8 @@ const NotFound = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigate('/website-sample'); // Redirect to the homepage or any other page
-    }, 3000); // 3 seconds delay
+      navigate('/'); // Redirect to the homepage or any other page
+    }, 1000); // 1 seconds delay
   }, [navigate]);
 
   return (
